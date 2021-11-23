@@ -1,0 +1,127 @@
+*,*::before,*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+.game{
+    width: 600px;
+    margin:0 auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.game div{
+    height: 200px;
+}
+.image:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.image img{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+.btn button{
+    width: 130px;
+    height: 35px;
+    background: none;
+    border:none;
+    border:2px solid deepskyblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: deepskyblue;
+    position: fixed;
+    bottom: 20px;
+    left: 80%;
+    right: 50%;
+    transform: translate(-50%);
+}
+.btn button:hover{
+    background-color: deepskyblue;
+    color:#fff;
+    cursor: pointer;
+}
+/* alert*/
+
+.result{
+    display: none;
+}
+h3 {
+    font-family: "Arial",sans-serif;
+}
+
+
+.alert {
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 15px 5px #ccc;
+    box-shadow: 0 0 15px 5px #ccc;
+}
+
+.close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    right: 15px;
+    top: 5px;
+    text-align: center;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+.simple-alert {
+    background-color: #ebebeb;
+    border-left: 5px solid #6c6c6c;
+}
+
+.simple-alert .close {
+    border-color: #6c6c6c;
+    color: #6c6c6c;
+}
+
+.success-alert {
+    background-color: #a8f0c6;
+    border-left: 5px solid #178344;
+}
+
+.success-alert .close {
+    border-color: #178344;
+    color: #178344;
+}
+
+.danger-alert {
+    background-color: #f7a7a3;
+    border-left: 5px solid #8f130c;
+}
+
+.danger-alert .close {
+    border-color: #8f130c;
+    color: #8f130c;
+}
+
+.warning-alert {
+    background-color: #ffd48a;
+    border-left: 5px solid #8a5700;
+}
+
+.warning-alert .close {
+    border-color: #8a5700;
+    color: #8a5700;
+}
